@@ -11,3 +11,10 @@ resources:
     type: dockerOptions
     version:
       memory: 500
+  - name: nginx-image-1
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
