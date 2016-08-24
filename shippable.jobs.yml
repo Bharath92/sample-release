@@ -29,3 +29,9 @@ jobs:
       versionNumber: 1000
     - TASK: managed
       bump: patch
+  - name: release-5
+    type: release
+    steps:
+    - IN: version-2
+    - IN: version-1
+    - bump: patch
