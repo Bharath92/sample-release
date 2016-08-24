@@ -6,7 +6,7 @@ jobs:
       switch: on
     - IN: version-1
       switch: on
-      versionName: "0.0.0"
+      versionNumber: 99
     - TASK: managed
       bump: patch
   - name: release-2
