@@ -25,13 +25,13 @@ jobs:
     - IN: version-1
     - TASK: managed
       bump: patch
-  - name: release-4
+  - name: release-7
     type: release
     steps:
     - IN: docker-opts-1
       switch: on
     - IN: version-1
-      versionNumber: "x"
+      versionNumber: x
     - TASK: managed
       bump: patch
   - name: release-6
