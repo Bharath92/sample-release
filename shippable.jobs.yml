@@ -1,11 +1,10 @@
 jobs:
-  - name: release-1
-    type: release
+  - name: nginx-manifest-1
+    type: manifest
     steps:
-    - IN: nginx-image-1
-      switch: on
-    - IN: version-1
-      versionName: "0.0.0"
+      - IN: nginx-image-1
+        pull: false
+        switch: on
     - TASK: managed
       bump: patch
   - name: release-2
@@ -29,13 +28,11 @@ jobs:
       versionNumber: 1000
     - TASK: managed
       bump: patch
-  - name: release-6
-    type: release
+  - name: nginx-manifest-2
+    type: manifest
     steps:
-    - IN: nginx-image-1
-      switch: off
-    - IN: version-1
-      versionName: "0.0.0"
-      switch: off
-    - TASK: managed
-      bump: patch
+      - IN: nginx-image-1
+        pull: false
+        switch: off
+      - TASK: managed
+        bump: patch
