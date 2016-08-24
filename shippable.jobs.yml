@@ -2,7 +2,7 @@ jobs:
   - name: release-1
     type: release
     steps:
-    - IN: docker-opts-1
+    - IN: nginx-image-1
       switch: on
     - IN: version-1
       versionName: "0.0.0"
@@ -32,7 +32,7 @@ jobs:
   - name: release-6
     type: release
     steps:
-    - IN: docker-opts-1
+    - IN: nginx-image-1
       switch: off
     - IN: version-1
       versionName: "0.0.0"
