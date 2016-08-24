@@ -2,9 +2,5 @@ jobs:
   - name: release-1
     type: release
     steps:
-    - IN: docker-opts-1
-      switch: on
-    - IN: version-1
-      switch: on
     - TASK: managed
       bump: patch
