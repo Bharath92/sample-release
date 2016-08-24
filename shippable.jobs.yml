@@ -42,3 +42,8 @@ jobs:
       switch: off
     - TASK: managed
       bump: patch
+  - name: release-7
+    type: release
+    steps:
+    - TASK: managed
+      bump: patch
