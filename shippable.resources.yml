@@ -3,3 +3,7 @@ resources:
     type: version
     seed:
       versionName: "0.0.0"
+  - name: docker-opts-1
+    type: dockerOptions
+    source:
+      memory: 400
