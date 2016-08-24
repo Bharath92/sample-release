@@ -6,4 +6,4 @@ resources:
   - name: docker-opts-1
     type: dockerOptions
     version:
-      memory: 600
+      memory: 500
