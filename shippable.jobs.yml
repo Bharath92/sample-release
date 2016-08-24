@@ -25,7 +25,7 @@ jobs:
     - IN: version-1
     - TASK: managed
       bump: patch
-  - name: release-9
+  - name: release-8
     type: release
     steps:
     - IN: docker-opts-1
