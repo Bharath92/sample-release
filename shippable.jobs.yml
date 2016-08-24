@@ -5,7 +5,6 @@ jobs:
     - IN: docker-opts-1
       switch: on
     - IN: version-1
-      switch: on
       versionNumber: 555
     - TASK: managed
       bump: patch
