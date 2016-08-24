@@ -29,9 +29,13 @@ jobs:
       versionNumber: 1000
     - TASK: managed
       bump: patch
-  - name: release-5
+  - name: release-6
     type: release
     steps:
-    - IN: version-2
+    - IN: docker-opts-1
+      switch: off
     - IN: version-1
-    - bump: patch
+      versionName: "0.0.0"
+      switch: off
+    - TASK: managed
+      bump: patch
