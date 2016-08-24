@@ -1,0 +1,8 @@
+jobs:
+  - name: release-1
+    type: release
+      steps:
+      - IN: version-1
+        switch: on
+      - TASK: managed
+        bump: patch
