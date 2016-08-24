@@ -1,0 +1,5 @@
+resources:
+  - name: version-1
+    type: version
+    seed:
+      versionName: "0.0.0"
