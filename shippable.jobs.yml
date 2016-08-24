@@ -13,3 +13,10 @@ jobs:
     steps:
     - TASK: managed
       bump: patch
+  - name: release-3
+    type: release
+    steps:
+    - IN: version-2
+    - IN: version-1
+    - TASK: managed
+      bump: patch
