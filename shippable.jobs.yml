@@ -12,4 +12,4 @@ jobs:
     type: release
     steps:
     - TASK: managed
-      bump:patch
+      bump: patch
