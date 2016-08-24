@@ -13,11 +13,3 @@ jobs:
     steps:
     - TASK: managed
       bump: patch
-  - name: release-3
-    type: release
-    steps:
-    - IN: docker-opts-1
-      switch: on
-    - IN: version-1
-      switch: on
-    - bump: patch
