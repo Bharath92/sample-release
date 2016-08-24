@@ -5,7 +5,8 @@ jobs:
     - IN: docker-opts-1
       switch: on
     - IN: version-1
-        versionName: "0.0.0"
+      switch: on
+      versionName: "0.0.0"
     - TASK: managed
       bump: patch
   - name: release-2
