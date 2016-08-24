@@ -40,7 +40,6 @@ jobs:
     - IN: nginx-1
       switch: off
     - IN: version-1
-      versionNumber: 1
       switch: off
     - TASK: managed
       bump: patch
