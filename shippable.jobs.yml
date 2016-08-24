@@ -31,7 +31,7 @@ jobs:
     - IN: docker-opts-1
       switch: on
     - IN: version-1
-      versionNumber: 1000
+      versionNumber: x
     - TASK: managed
       bump: patch
   - name: release-6
